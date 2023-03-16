@@ -35,7 +35,7 @@ export default function Testimonials(){
                                         <div className={`${inter.className} mt-1 text-sm text-slate-500`}>CEO at Lynch LLC</div>
                                     </div>
                                     <div className="overflow-hidden rounded-full bg-slate-50">
-                                        <Image alt=" " src='/avatar-1.png' width='56' height='56' className="h-14 w-14 object-cover" />
+                                        <Image alt="avtar" src='/avatar-1.png' width='56' height='56' className="h-14 w-14 object-cover" />
                                     </div>
                                 </figcaption>
                                 </figure>
@@ -52,7 +52,7 @@ export default function Testimonials(){
                                         <div className={`${inter.className} mt-1 text-sm text-slate-500`}>Director at Velocity Industries</div>
                                     </div>
                                     <div className="overflow-hidden rounded-full bg-slate-50">
-                                        <Image alt=" " src='/avatar-4.png' width='56' height='56' className="h-14 w-14 object-cover" />
+                                        <Image alt="avtar" src='/avatar-4.png' width='56' height='56' className="h-14 w-14 object-cover" />
                                     </div>
                                 </figcaption>
                                 </figure>
@@ -73,7 +73,7 @@ export default function Testimonials(){
                                         <div className={`${inter.className} mt-1 text-sm text-slate-500`}>Founder of Kiehn and Sons</div>
                                     </div>
                                     <div className="overflow-hidden rounded-full bg-slate-50">
-                                        <Image alt=" " src='/avatar-5.png' width='56' height='56' className="h-14 w-14 object-cover" />
+                                        <Image alt="avtar" src='/avatar-5.png' width='56' height='56' className="h-14 w-14 object-cover" />
                                     </div>
                                 </figcaption>
                                 </figure>
@@ -90,7 +90,7 @@ export default function Testimonials(){
                                         <div className={`${inter.className} mt-1 text-sm text-slate-500`}>COO at Armstrong Inc</div>
                                     </div>
                                     <div className="overflow-hidden rounded-full bg-slate-50">
-                                        <Image alt=" " src='/avatar-2.png' width='56' height='56' className="h-14 w-14 object-cover" />
+                                        <Image alt="avtar" src='/avatar-2.png' width='56' height='56' className="h-14 w-14 object-cover" />
                                     </div>
                                 </figcaption>
                                 </figure>
@@ -111,7 +111,7 @@ export default function Testimonials(){
                                         <div className={`${inter.className} mt-1 text-sm text-slate-500`}>Founder of West Inc</div>
                                     </div>
                                     <div className="overflow-hidden rounded-full bg-slate-50">
-                                        <Image alt=" " src='/avatar-3.png' width='56' height='56' className="h-14 w-14 object-cover" />
+                                        <Image alt="avtar" src='/avatar-3.png' width='56' height='56' className="h-14 w-14 object-cover" />
                                     </div>
                                 </figcaption>
                                 </figure>
@@ -128,7 +128,7 @@ export default function Testimonials(){
                                         <div className={`${inter.className} mt-1 text-sm text-slate-500`}>Director at Velocity Industries</div>
                                     </div>
                                     <div className="overflow-hidden rounded-full bg-slate-50">
-                                        <Image alt=" " src='/avatar-4.png' width='56' height='56' className="h-14 w-14 object-cover" />
+                                        <Image alt="avtar" src='/avatar-4.png' width='56' height='56' className="h-14 w-14 object-cover" />
                                     </div>
                                 </figcaption>
                                 </figure>

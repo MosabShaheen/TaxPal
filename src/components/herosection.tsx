@@ -78,9 +78,6 @@ export default function HeroSection() {
                     src="/transistor.svg"
                     width="158"
                     height="48"
-                    decoding="async"
-                    data-nimg="1"
-                    loading="lazy"
                   />
                 </li>
                 <li className="flex">
@@ -89,9 +86,6 @@ export default function HeroSection() {
                     src="/tuple.svg"
                     width="105"
                     height="48"
-                    decoding="async"
-                    data-nimg="1"
-                    loading="lazy"
                   />
                 </li>
                 <li className="flex">
@@ -100,9 +94,6 @@ export default function HeroSection() {
                     src="/statickitsvg.svg"
                     width="127"
                     height="48"
-                    decoding="async"
-                    data-nimg="1"
-                    loading="lazy"
                   />
                 </li>
               </ul>
@@ -118,9 +109,6 @@ export default function HeroSection() {
                     src="/mirage.svg"
                     width="138"
                     height="48"
-                    decoding="async"
-                    data-nimg="1"
-                    loading="lazy"
                   />
                 </li>
                 <li className="flex">
@@ -129,9 +117,6 @@ export default function HeroSection() {
                     src="/laravel.svg"
                     width="136"
                     height="48"
-                    decoding="async"
-                    data-nimg="1"
-                    loading="lazy"
                   />
                 </li>
                 <li className="flex">
@@ -140,9 +125,6 @@ export default function HeroSection() {
                     src="/statamic.svg"
                     width="147"
                     height="48"
-                    decoding="async"
-                    data-nimg="1"
-                    loading="lazy"
                   />
                 </li>
               </ul>

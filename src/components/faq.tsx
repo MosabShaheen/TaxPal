@@ -14,7 +14,7 @@ const inter = Inter({
 export default function Faq(){
     return(
         <section id="faq" aria-label="faq-title" className="relative overflow-hidden bg-slate-50 py-20 sm:py-32">
-            <Image alt=" " width='1558' height='946' className="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4" src='/background-faqs.jpg'/>
+            <Image alt="faq-bg" width='1558' height='946' className="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4" src='/background-faqs.jpg'/>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2 id="faq-title" className={`${lexend.className} text-3xl tracking-tight text-slate-900 sm:text-4xl`}>Frequently asked questions</h2>

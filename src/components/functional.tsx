@@ -28,13 +28,12 @@ export default function Functional() {
         className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
       >
         <Image
-          alt=" "
+          alt="bg"
           src="/background.jpg"
           width="2245"
           height="1636"
           className="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-          loading="lazy"
-        ></Image>
+        />
         <div
           className="mx-auto max-w-7x px-4 sm:px-6 lg:px-8 relative"
         >
@@ -156,7 +155,7 @@ export default function Functional() {
                     </p>
                   </div>
                   <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                    <Image alt=" " sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem" src='/payrollimg.png' width="2174" height="1464" decoding="async" className="w-full" />
+                    <Image alt="payroll" src='/payrollimg.png' width="2174" height="1464" className="w-full" />
                   </div>
                 </Tab.Panel>
                 <Tab.Panel>
@@ -167,7 +166,7 @@ export default function Functional() {
                     </p>
                   </div>
                   <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                    <Image alt=" " sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem" src='/expenses.png' width="2174" height="1464" decoding="async" className="w-full" />
+                    <Image alt="expenses" src='/expenses.png' width="2174" height="1464" className="w-full" />
                   </div>
                 </Tab.Panel>
                 <Tab.Panel>
@@ -178,7 +177,7 @@ export default function Functional() {
                     </p>
                   </div>
                   <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                    <Image alt=" " sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem" src='/vat-returns.png' width="2174" height="1464" decoding="async" className="w-full" />
+                    <Image alt="vat-returns" src='/vat-returns.png' width="2174" height="1464" className="w-full" />
                   </div>
                 </Tab.Panel>
                 <Tab.Panel>
@@ -189,7 +188,7 @@ export default function Functional() {
                     </p>
                   </div>
                   <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                    <Image alt=" " sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem" src='/reporting.png' width="2174" height="1464" decoding="async" className="w-full" />
+                    <Image alt="reporting" src='/reporting.png' width="2174" height="1464" className="w-full" />
                   </div>
                 </Tab.Panel>
             </Tab.Panels>

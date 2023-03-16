@@ -86,12 +86,10 @@ export default function Task() {
                 <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6"></div>
                 <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
                   <Image
-                    alt=" "
-                    sizes="52.75rem"
+                    alt="profitLoos"
                     width="1688"
                     height="856"
                     className="w-full"
-                    loading="lazy"
                     src="/profit-loss.png"
                   />
                 </div>
@@ -142,12 +140,10 @@ export default function Task() {
                 <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6"></div>
                 <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
                   <Image
-                    alt=" "
-                    sizes="52.75rem"
+                    alt="inventory"
                     width="1688"
                     height="856"
                     className="w-full"
-                    loading="lazy"
                     src="/inventory.png"
                   />
                 </div>
@@ -198,12 +194,10 @@ export default function Task() {
                 <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6"></div>
                 <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
                   <Image
-                    alt=" "
-                    sizes="52.75rem"
+                    alt="contacts"
                     width="1688"
                     height="856"
                     className="w-full"
-                    loading="lazy"
                     src="/contacts.png"
                   />
                 </div>
@@ -281,21 +275,21 @@ export default function Task() {
                       activeTab === "tab1" ? "" : "opacity-60"
                     }`}>
                         <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                            <Image alt=" " sizes="52.75" width="1688" height="856" decoding="async" className="w-full" loading="lazy" src='/profit-loss.png'/>
+                            <Image alt="profitlooss" width="1688" height="856" className="w-full" src='/profit-loss.png'/>
                         </div>
                     </Tab.Panel>
                     <Tab.Panel className={`px-5 transition duration-500 ease-in-out focus:outline-none ${
                       activeTab === "tab2" ? "" : "opacity-60"
                     }`}>
                         <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                            <Image alt=" " sizes="52.75" width="1688" height="856" decoding="async" className="w-full" loading="lazy" src='/inventory.png'/>
+                            <Image alt="inventory" width="1688" height="856" className="w-full" src='/inventory.png'/>
                         </div>
                     </Tab.Panel>
                     <Tab.Panel className={`px-5 transition duration-500 ease-in-out focus:outline-none ${
                       activeTab === "tab3" ? "" : "opacity-60"
                     }`}>
                         <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                            <Image alt=" " sizes="52.75" width="1688" height="856" decoding="async" className="w-full" loading="lazy" src='/contacts.png'/>
+                            <Image alt="contacts" width="1688" height="856" className="w-full" src='/contacts.png'/>
                         </div>
                     </Tab.Panel>
                 </Tab.Panels>

@@ -1,18 +1,22 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
 import { Inter } from "next/font/google";
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['100','200', '300', '400', '500', '600', '700', '800', '900']
-})
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export default function Header() {
+  const [tab, activeTab] = useState(true);
   return (
     <header className="py-10">
-      <div className={`${inter.className} mx-auto max-w-7xl px-4 sm:px-6 lg:px-8`}>
+      <div
+        className={`${inter.className} mx-auto max-w-7xl px-4 sm:px-6 lg:px-8`}
+      >
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link aria-label="Home" href="/#">
+            <Link href="/#">
               <svg
                 aria-hidden="true"
                 viewBox="0 0 109 40"
@@ -47,24 +51,97 @@ export default function Header() {
               </svg>
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <Link className="quote" href="/#features">Features</Link>
-              <Link className="quote" href="/#testimonials">Testimonials</Link>
-              <Link className="quote" href="/#pricing">Pricing</Link>
+              <Link className="quote" href="/#features">
+                Features
+              </Link>
+              <Link className="quote" href="/#testimonials">
+                Testimonials
+              </Link>
+              <Link className="quote" href="/#pricing">
+                Pricing
+              </Link>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <Link className="inlinne-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/login">Sign in</Link>
+              <Link
+                className="inlinne-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+                href="/login"
+              >
+                Sign in
+              </Link>
             </div>
-            <Link className="leading-6 group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600"  href="/register">
-              <span>Get started
+            <Link
+              className="leading-6 group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600"
+              href="/register"
+            >
+              <span>
+                Get started
                 <span className="hidden lg:inline"> today</span>
               </span>
             </Link>
-            <div className="-mr-1 md:hidden"><div data-headlessui-state=""><button className="relative z-10 flex h-8 w-8 items-center justify-center [&amp;:not(:focus-visible)]:focus:outline-none" aria-label="Toggle Navigation" type="button" aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-:r0:"><svg aria-hidden="true" className="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round"><path d="M0 1H14M0 7H14M0 13H14" className="origin-center transition"></path><path d="M2 2L12 12M12 2L2 12" className="origin-center transition scale-90 opacity-0"></path></svg></button></div></div>
+            <div className="-mr-1 md:hidden">
+              <div>
+                <button
+                  className="relative z-10 flex h-8 w-8 items-center justify-center [&amp;:not(:focus-visible)]:focus:outline-none"
+                  aria-label="Toggle Navigation"
+                  type="button"
+                  onClick={() => activeTab(!tab)}
+                >
+                  {tab ? (
+                    <svg
+                      className="h-3.5 w-3.5 overflow-visible stroke-slate-700"
+                      fill="none"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <path
+                        d="M0 1H14M0 7H14M0 13H14"
+                        className="origin-center transition"
+                      ></path>
+                      <path
+                        d="M2 2L12 12M12 2L2 12"
+                        className="origin-center transition scale-90 opacity-0"
+                      ></path>
+                    </svg>
+                  ) : (
+                    <svg
+                      className="h-3.5 w-3.5 overflow-visible stroke-slate-700"
+                      fill="none"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <path
+                        d="M0 1H14M0 7H14M0 13H14"
+                        className="origin-center transition scale-90 opacity-0"
+                      ></path>
+                      <path
+                        d="M2 2L12 12M12 2L2 12"
+                        className="origin-center transition"
+                      ></path>
+                    </svg>
+                  )}
+                </button>
+                {
+                  tab === false ?
+                  <div>
+                    <div className="fixed inset-0 bg-slate-300/50 opacity-100" ></div>
+                    <div className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 opacity-100 scale-100">
+                      <Link className="block w-full p-2" href="/#features">Features</Link>
+                      <Link className="block w-full p-2" href="/#features">Testimonials</Link>
+                      <Link className="block w-full p-2" href="/#features">Pricing</Link>
+                      <hr className="m-2 border-slate-300/40" />
+                      <Link className="block w-full p-2" href="/#features">Sign in</Link>
+                    </div>
+                  </div>
+                  :
+                  <div></div>
+                }
+            </div>
+          </div>
           </div>
         </nav>
       </div>
-      </header>
+    </header>
   );
 }
