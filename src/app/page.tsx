@@ -10,6 +10,7 @@ import Testimonials from "@/components/testimonials";
 import Pricing from "@/components/pricing";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
+import Blog from "@/components/blog";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
